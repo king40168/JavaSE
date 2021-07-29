@@ -29,6 +29,6 @@ public class Architect extends Designer {
     }
 
     public String getDetailsForTeam() {
-        return getMemberId() + "/" + getId() + "\t\t" + getName() + "\t" + getAge() + "\t\t" + getSalary() + "\t架构师\t" + getBonus() + "\t" + getStock();
+        return getMemberDetails() + "\t架构师\t" + getBonus() + "\t" + getStock();
     }
 }

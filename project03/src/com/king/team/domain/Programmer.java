@@ -46,11 +46,16 @@ public class Programmer extends Employee {
 
     @Override
     public String toString() {
-        return getDetails() + "\t程序员\t" + status + "\t\t\t\t\t" + equipment.getDescription();
+        return getDetails() + "\t程序员\t" + status + "\t\t\t" + equipment.getDescription();
     }
 
     public String getDetailsForTeam() {
-        return memberId + "/" + getId() + "\t\t" + getName() + "\t" + getAge() + "\t\t" + getSalary() + "\t程序员\t";
+        return getMemberDetails()+ "\t程序员";
     }
+
+    protected String getMemberDetails(){
+        return getMemberId() + "/" + getDetails();
+    }
+
 
 }
